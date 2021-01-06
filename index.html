@@ -11,16 +11,17 @@
     </script>
 </head>
 
-<body oncontextmenu = "return false" onkeydown="return false">
+<body>
 
     <div class="contenedorprincipal">
         <div class="contenedor1">
             <div class="contenedor_contra">
                 <label for="nombre">Contraseña:</label>
                 <input class="contra" type="password" id="contraseñaa">
-                
+                 <input id="enter" type="submit" onclick='verificarContra()' value="Enter"> 
             </div>
-            <button onclick='verificarContra()' >Enter</button>
+           
+            
             <div id="error"></div>
         </div>
         <div class="contenedor2" id="contenedorSecreto">
