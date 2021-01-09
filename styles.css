@@ -6,7 +6,17 @@ body {
     
 }
 .contenedorprincipal{
-  
+        /*este es el contenedor padre y contenedor1 es el hijo*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
 }
 
 
@@ -16,7 +26,7 @@ body {
     background: radial-gradient(rgb(255, 0, 255), rgb(75, 55, 255));
     border-radius: 10px;
     padding: 15px;
-    margin: auto;
+    margin: 0px;
     text-align: center;
     margin-top: 10px;
 
