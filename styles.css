@@ -29,6 +29,7 @@ body {
     margin: 0px;
     text-align: center;
     margin-top: 10px;
+    transition: 1;
 
 }
 .contenedor_contra {
@@ -36,7 +37,7 @@ body {
 }
 .contenedor2 {
     display: none;
-    
+    transition: 1;
     width: 350px;
     height: 350px;  
     background: radial-gradient(rgb(255, 0, 255), rgb(75, 55, 255));

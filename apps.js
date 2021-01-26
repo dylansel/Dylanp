@@ -1,9 +1,12 @@
 
 function verificarContra() {
-    var contraseña = btoa(document.getElementById("contraseñaa").value) ;
+    
+   var contraseña = btoa(document.getElementById("contraseñaa").value);
+
+    
     if (contraseña == "MTIzNDU2") {
         console.log("La contraseña es Correcta");
-        error.innerHTML = "La contraseña es Correcta"
+        error.innerHTML = "La contraseña es Correcta";
         document.getElementById("contenedorSecreto").style.display = "block";
         document.getElementById("error").style.display = "block";
         document.getElementById("error").style.backgroundColor = "#2AFF04";
@@ -19,5 +22,5 @@ function verificarContra() {
         document.getElementById("error").style.display = "block";
         document.getElementById("contenedorSecreto").style.display = "none";
     }
-    return false;
+
 }
