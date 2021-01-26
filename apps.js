@@ -1,10 +1,9 @@
-
 function verificarContra() {
-    
-   var contraseña = btoa(document.getElementById("contraseñaa").value);
 
-    
-    if (contraseña == "MTIzNDU2") {
+    var contraseña = btoa(document.getElementById("contraseñaa").value);
+
+
+    if (contraseña == "ZHlsYW4xMjM=") {
         console.log("La contraseña es Correcta");
         error.innerHTML = "La contraseña es Correcta";
         document.getElementById("contenedorSecreto").style.display = "block";
