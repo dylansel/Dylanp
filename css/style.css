@@ -46,6 +46,7 @@
         padding-bottom: 3rem;
         box-shadow: 0px 0px 15px rgb(128, 128, 128);
         display: block;
+        box-sizing: border-box;
     }
     
     .miForm input {
@@ -156,17 +157,18 @@
         }
     }
     
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:750px) {
         html {
             font-size: 6px;
         }
     }
     
-    @media screen and (max-width:500px) {
+    @media screen and (max-width:600px) {
         html {
-            font-size: 7px;
+            font-size: 6px;
         }
         .caja1 {
+            transition: 2.5s;
             width: 85%;
         }
         .cajaPerfil img {
@@ -180,5 +182,10 @@
         .configuracion {
             position: absolute;
             display: block;
+        }
+        .cajaPerfil {
+            min-width: 40rem;
+            min-height: 35rem;
+            max-width: 100rem;
         }
     }
