@@ -12,8 +12,8 @@ var perfil1 = [
 function validarDatos() {
     var inputUsuario = document.getElementById("inputUsuario").value;
     var inputContrasenia = document.getElementById("inputContrasenia").value;
-    var usuario1 = "dylan";
-    var contrasenia1 = "dylan123";
+    var usuario1 = "";
+    var contrasenia1 = "";
 
     if (usuario1 == inputUsuario && contrasenia1 == inputContrasenia) {
         console.log("Contraseña correcta");
@@ -121,9 +121,18 @@ function abrirConfiguracion() {
     var colorFondo = document.getElementById("colorFondo");
     var colorFondoPerfil = document.getElementById("colorFondoPerfil");
     var colorBotones = document.getElementById("colorBotones");
-    colorFondo.value = localStorage.getItem("colorFondo");
-    colorFondoPerfil.value = localStorage.getItem("colorFondoPerfil");
-    colorBotones.value = localStorage.getItem("colorBotones");
+    if (localStorage.getItem("colorFondo") == null) {
+        colorFondo.value = "#1f1f1f";
+        colorFondoPerfil.value = "#ebebeb";
+        colorBotones.value = "#161616";
+    } else {
+        colorFondo.value = localStorage.getItem("colorFondo");
+        colorFondoPerfil.value = localStorage.getItem("colorFondoPerfil");
+        colorBotones.value = localStorage.getItem("colorBotones");
+    }
+
+
+
 
 
 
