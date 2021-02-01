@@ -12,8 +12,8 @@ var perfil1 = [
 function validarDatos() {
     var inputUsuario = document.getElementById("inputUsuario").value;
     var inputContrasenia = document.getElementById("inputContrasenia").value;
-    var usuario1 = "";
-    var contrasenia1 = "";
+    var usuario1 = "dylan";
+    var contrasenia1 = "dylan123";
 
     if (usuario1 == inputUsuario && contrasenia1 == inputContrasenia) {
         console.log("Contraseña correcta");
