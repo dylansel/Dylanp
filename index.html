@@ -3,43 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dylanp</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type='text/javascript'>
-        document.oncontextmenu = function() {
-            return false
-        }
-    </script>
+    <title>Dylansel</title>
+    <script src="https://kit.fontawesome.com/c7d9395cbb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <div class="contenedorprincipal">
-        <div class="contenedor">
-            <div class="contenedor1">
-                <div class="contenedor_contra">
-                    <label for="nombre">Contraseña:</label>
-                    <input class="contra" type="password" id="contraseñaa">
-                    <input id="enter" type="submit" onclick='verificarContra()' value="Enter">
-                </div>
 
 
-                <div id="error"></div>
+
+    <div class="padre" id="padre">
+        <div class="caja1">
+            <header>
+                <h2>Login</h2>
+            </header>
+            <div class="caja2">
+
+                <form class="miForm" id="miForm" action="" autocomplete="on">
+
+                    <label for="">Usuario</label>
+                    <input type="text" id="inputUsuario" placeholder="Correo Electronico" required>
+                    <label for="">Contraseña</label>
+                    <input type="password" id="inputContrasenia" placeholder="**********" required>
+                    <button type="button" class="boton" id="bEntrar">Entrar</button>
+                    <label for="" id="error"></label>
+
+                </form>
             </div>
-            <div class="contenedor2" id="contenedorSecreto">
-                <h2>Bienvenido Dylan</h2>
-                <a href="paginaweb/index.html"><input type="button" value="Abrir"></a>
-            </div>
+
         </div>
+
     </div>
 
-
-
-
-
-
-    <script src="apps.js"></script>
+    <script src="js/apps.js"></script>
 </body>
 
 </html>
