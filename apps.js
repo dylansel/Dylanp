@@ -7,20 +7,10 @@ function empezar() {
     cajapuntos.removeAttribute('class');
 
     cajapuntos.style.background = "rgb(59, 59, 59)";
-    setTimeout(activarB1, "500");
-    setTimeout(activarB2, "700");
-    setTimeout(activarB4, "900");
-    setTimeout(activarB3, "1100");
+    animacionInicial()
 
-    setTimeout(activarB1, "1300");
-    setTimeout(activarB2, "1500");
-    setTimeout(activarB4, "1700");
-    setTimeout(activarB3, "1900");
 
-    setTimeout(activarB1, "2100");
-    setTimeout(activarB2, "2300");
-    setTimeout(activarB4, "2500");
-    setTimeout(activarB3, "2700");
+
     setTimeout(reporducirsecunecia, "3500");
 
 
@@ -34,6 +24,8 @@ function empezar() {
             Agregarsecuencia();
         }
         let record = localStorage.getItem("record")
+        if (record == null) { record = 0 }
+        if (record < nivelUsuario) { record = nivelUsuario };
         cajapuntos.style.flexDirection = "column";
         cajapuntos.innerHTML = "<h3>Nivel: " + nivelUsuario + "</h3><h4> Redord: " + record + "</h4>";
 
@@ -146,9 +138,15 @@ function empezar() {
                 localStorage.setItem("record", nivelUsuario);
             }
             record = localStorage.getItem("record");
-            alert("Cometiste un error. Tu puntuacion es: " + nivelUsuario + " | Record: " + record);
+            animacionInicial();
+            setTimeout(function() {
+                alert("Tu puntuacion es: " + nivelUsuario + " | Record: " + record);
+                location.reload();
+            }, "2800");
 
-            location.reload();
+
+
+
 
         } else {
             console.log("felicidades pasaste de nivel");
@@ -165,6 +163,22 @@ function empezar() {
 
 }
 
+function animacionInicial() {
+    setTimeout(activarB1, "500");
+    setTimeout(activarB2, "700");
+    setTimeout(activarB4, "900");
+    setTimeout(activarB3, "1100");
+
+    setTimeout(activarB1, "1300");
+    setTimeout(activarB2, "1500");
+    setTimeout(activarB4, "1700");
+    setTimeout(activarB3, "1900");
+
+    setTimeout(activarB1, "2100");
+    setTimeout(activarB2, "2300");
+    setTimeout(activarB4, "2500");
+    setTimeout(activarB3, "2700");
+}
 
 var reproduciendo = true;
 var nivel = 0;
