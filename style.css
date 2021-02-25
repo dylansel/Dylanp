@@ -1,0 +1,117 @@
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+        html {
+            transition: 0.2s;
+            font-size: 12px;
+        }
+        
+        body {
+            overflow: hidden;
+            margin: 0;
+        }
+        
+        .padreGeneral {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            background: linear-gradient(rgb(0, 0, 0), rgb(36, 0, 0));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .base {
+            margin: 5rem;
+            position: absolute;
+            background-color: rgb(59, 59, 59);
+            width: 40rem;
+            height: 40rem;
+            border-radius: 100%;
+            padding: 1rem;
+            box-shadow: 0 0 30px rgba(228, 228, 228, 0.288);
+        }
+        
+        #cajapuntos {
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            background-color: rgb(107, 9, 1);
+            width: 12rem;
+            height: 12rem;
+            border-radius: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem !important;
+            color: ivory;
+            font-family: 'Lora', serif;
+        }
+        
+        #cajapuntos h3 {
+            font-size: 2rem;
+            color: ivory;
+            font-family: 'Lora', serif;
+        }
+        
+        #cajapuntos h4 {
+            font-size: 1.4rem;
+            color: ivory;
+            font-family: 'Lora', serif;
+        }
+        
+        .cajapuntosHover:hover {
+            transition: 0.2s;
+            background-color: rgb(139, 12, 0);
+            text-shadow: 0 0 20px rgba(255, 242, 242, 0.808);
+            box-shadow: 0 0 10px rgba(252, 129, 151, 0.548);
+            cursor: pointer;
+        }
+        
+        .caja {
+            width: 18rem;
+            height: 18rem;
+            margin: 0.5rem;
+        }
+        
+        .caja:hover {
+            cursor: pointer;
+        }
+        
+        .b1 {
+            background-color: #00fc93c0;
+            border-top-left-radius: 100%;
+        }
+        
+        .b2 {
+            background-color: #d4ff5cb4;
+            border-top-right-radius: 100%;
+        }
+        
+        .b3 {
+            background-color: #ac03fabd;
+            border-bottom-left-radius: 100%;
+        }
+        
+        .b4 {
+            background-color: #fa1876bd;
+            border-bottom-right-radius: 100%;
+        }
+        
+        @media (max-width: 800px) {
+            html {
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            html {
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            html {
+                font-size: 8px;
+            }
+        }
