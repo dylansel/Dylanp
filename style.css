@@ -78,6 +78,10 @@
             cursor: pointer;
         }
         
+        .caja:active {
+            cursor: default;
+        }
+        
         .b1 {
             background-color: #00fc93c0;
             border-top-left-radius: 100%;

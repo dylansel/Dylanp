@@ -223,10 +223,11 @@ function activarB1() {
     var b1 = document.getElementById("b1");
     b1.style.transition = "0.2s";
     b1.style.background = "#00fc93"
+
     setTimeout(function() {
         b1.style.background = "#00fc93c0"
     }, "300");
-
+    b1.innerHTML = '<audio src="sonds/SN1.mp3" autoplay></audio>'
 
 }
 
@@ -239,6 +240,7 @@ function activarB2() {
     setTimeout(function() {
         b2.style.background = "#d4ff5cb4"
     }, "300");
+    b2.innerHTML = '<audio src="sonds/SN2.mp3" autoplay></audio>'
 
 
 }
@@ -252,7 +254,7 @@ function activarB3() {
     setTimeout(function() {
         b3.style.background = "#ac03fabd"
     }, "300");
-
+    b3.innerHTML = '<audio src="sonds/SN4.mp3" autoplay></audio>'
 
 }
 
@@ -264,6 +266,6 @@ function activarB4() {
     setTimeout(function() {
         b4.style.background = "#fa1876bd"
     }, "300");
-
+    b4.innerHTML = '<audio src="sonds/SN3.mp3" autoplay></audio>'
 
 }
