@@ -2,6 +2,8 @@
         html {
             transition: 0.2s;
             font-size: 12px;
+            overflow-x: hidden;
+            overflow-y: hidden;
         }
         
         body {
@@ -117,5 +119,11 @@
         @media (max-width: 400px) {
             html {
                 font-size: 8px;
+            }
+        }
+        
+        @media (max-width: 350px) {
+            html {
+                font-size: 6px;
             }
         }
