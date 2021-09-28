@@ -1,0 +1,113 @@
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+        html {
+            transition: 0.2s;
+            font-size: 12px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            overflow: hidden;
+            margin: 0;
+        }
+        
+        .padreGeneral {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            background: linear-gradient(rgb(0, 0, 0), rgb(36, 0, 0));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .base {
+            display: block;
+            
+            position: absolute;
+            background-color: rgb(168, 168, 168);
+            width: 85vh;
+            height: 85vh;
+            border-radius: 30px;
+            padding: 15px;
+            box-shadow: 0 0 30px rgba(228, 228, 228, 0.288);
+        }
+        
+        
+.linea{
+    background: black;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-left:5px;
+    height: 6px;
+    border-radius:50px;
+    position: absolute;
+}
+.Lhorizontal{
+    transform: rotate(90deg);
+    top: 50%;
+    margin:auto;
+}
+.Lvertical{
+    left: 10%; 
+    margin:auto;
+}
+.linea1{
+    top: 36%;
+}
+.linea2{
+    bottom: 35%;
+}
+.linea3{
+    left: -15px;
+}
+.linea4{
+    right: -15px;
+    
+}
+.boxes{
+    position: relative;
+    margin: auto;
+    top:8%;
+    width: 85%;
+    height:85%;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    
+}
+.box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+.box i{
+    display: none;
+    opacity: 0;
+    transition: all 0.3;
+    font-size:80px;
+    color:rgb(19, 54, 255);
+}
+.box .fa-times{
+    color: red;
+}
+.activado{
+    display: block !important;
+    opacity: 1 !important;
+
+}
+.box:hover{
+    cursor: pointer;
+
+}
